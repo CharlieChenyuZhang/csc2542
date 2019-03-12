@@ -13,7 +13,6 @@
            :effect (and
                      (not (on-near-bank))
                      (oneof
-                       (and)
                        (on-far-bank))))
   (:action swim-island :parameters ()
            :precondition (and (on-island))
