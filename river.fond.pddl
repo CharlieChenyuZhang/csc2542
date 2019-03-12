@@ -14,7 +14,7 @@
                      (not (on-near-bank))
                      (oneof
                         ; I removed the (and) from the PDDL file so that strong cyclic solutions exist
-                        (on-island)
+                        (on-near-bank)
                        (on-far-bank))))
   (:action swim-island :parameters ()
            :precondition (and (on-island))
