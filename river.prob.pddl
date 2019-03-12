@@ -5,9 +5,9 @@
            :precondition (and (on-near-bank))
            :effect (and (not (on-near-bank))
                         (probabilistic
-                          0.01 (on-far-bank) ; x
-                          0.01 (not (alive)) ; y
-                          0.98 (on-island)))) ; x
+                          0.275 (on-far-bank) ; x
+                          0.45 (not (alive)) ; y
+                          0.275 (on-island)))) ; x
   (:action swim-river :parameters ()
            :precondition (and (on-near-bank))
            :effect (and (not (on-near-bank))
